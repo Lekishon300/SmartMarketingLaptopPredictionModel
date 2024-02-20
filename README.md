@@ -14,17 +14,16 @@ enhancing marketing efficiency and customer satisfaction.
 
 ## Dataset
 
-We have generated 3 datasets:
+There are 3 generated datasets:
 
 1. train
 2. test1
 3. test2 (secret)
 
-You'll fit your classifier to the training data, then estimate your
-accuracy using the test1 data.  We'll compute your final grade based
-on test2 data, which is similar but not identical to test1 data.
+The classifier fits to the training data, then estimate the
+accuracy using the test1 data.  
 
-Each of the 3 datasets consist of 3 files (so there are 9 files total, of which we give you 6):
+Each of the 3 datasets consist of 3 files:
 
 1. `???_users.csv`: information about each user
 2. `???_logs.csv`: details about webpages visited by each user
@@ -51,26 +50,12 @@ that they visited, and the number of minutes spent on the page.  We
 see Adriana visited 4 pages on the website for varying amounts of time
 (including one for laptop.html).
 
-User browsing history has the potential to be a good indicator for
-user clicks, but to make use of it with a machine learning model,
-you'll need to find ways to compute summary stats per user based on
-multiple page visits (or sometimes no page visits).
 
 ## `UserPredictor` class
 
 The goal of this project is to build a classifier that, given user and
 log data, can predict whether those users will be interested in our
-product.  There are a number of ways that you can go about this and a
-number of ways that you can use the data (or not use portions of the
-data); the freedom is yours.
-
-You'll write your classifier as a class called `UserPredictor` in your
-`main.py` file.  We require two methods (feel free to add more as
-useful): `fit` and `predict`.
-
-We recommend reading `tester.py` to understand how we expect your
-class to work.  We intentionally made tester.py very simple this time
--- only 80 lines of code!
+product.
 
 ### Method 1: `fit`
 
