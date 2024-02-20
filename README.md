@@ -10,7 +10,17 @@ This model  aims to leverage customer data to predict interest in a promotional 
 By analyzing user interactions and previous email engagement, the classifier discerns potential customers to target, 
 enhancing marketing efficiency and customer satisfaction.
 
+## Features
 
+* Data-Driven Predictive Modeling: Utilizes machine learning to analyze user behavior and predict email engagement.
+* Custom UserPredictor Class: Houses the predictive model, providing fit and predict methods for easy use with new data.
+* Intelligent Feature Engineering: Incorporates user data and web log interactions to create a robust feature set for the model.
+
+## Classifier Development
+
+* Preprocessing: Implements column addition for user-specific statistics from log data, such as total website engagement time and interest in laptop-related content.
+* Model Pipeline: Combines preprocessing steps with a Logistic Regression classifier, including imputation and scaling for numerical features and one-hot encoding for categorical features.
+* Accuracy Optimization: Achieved 79% accuracy, with cross-validation techniques to ensure model robustness.
 
 ## Dataset
 
